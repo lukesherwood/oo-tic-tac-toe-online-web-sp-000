@@ -68,14 +68,6 @@ def turn(board)
   end
 end
 
-def current_player(board)
-  if turn_count(board).even?
-    return "X"
-  else
-    return "O"
-      end
-end
-
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
     win_combination.all? { |win_index| board[win_index] == "X" } ||
