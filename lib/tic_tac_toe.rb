@@ -30,8 +30,8 @@ class TicTacToe
   end
 end
 
-def self.input_to_index(input)
-  converted_input = input.to_i-1
+def input_to_index(input)
+  converted_input = input.to_i
   @board[converted_input]
 end
 
