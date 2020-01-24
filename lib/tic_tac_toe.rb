@@ -20,7 +20,7 @@ class TicTacToe
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
- 
+  
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
@@ -66,16 +66,6 @@ def turn(board)
     puts "Please enter a valid number"
     turn(board)
   end
-end
-
-def turn_count(board)
-  count = 0
-  board.each do |turn|
-    if turn == "X"|| turn == "O"
-    count +=1
-    end
-  end
-  return count
 end
 
 def current_player(board)
